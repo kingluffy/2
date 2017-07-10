@@ -83,18 +83,18 @@ public class Game extends JFrame implements KeyListener{
 
 
 
-        if(goup = true){
+        if(goup){
             wo = wo-10;
 
         }
-        if(godown = true){
+        if(godown){
             wo = wo+10;
 
         }
-        if(goleft = true){
+        if(goleft){
             wi = wi-10;
         }
-        if(goright = true){
+        if(goright){
             wi = wi+10;
         }
 
@@ -105,6 +105,7 @@ public void keyPressed(KeyEvent w){
 
         switch(w.getKeyCode()){
             case KeyEvent.VK_W:
+                System.out.println("W");
                 goup = true;
                 godown = false;
                 goleft = false;
@@ -123,6 +124,7 @@ public void keyPressed(KeyEvent w){
                 goright = false;
                 break;
             case KeyEvent.VK_D:
+                System.out.println("D");
                 goup = false;
                 godown = false;
                 goleft = false;
